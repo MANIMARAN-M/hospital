@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--------------------------------------------- Icon ---------------------------------------------->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!--------------------------------------------- Animations ---------------------------------------------->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <!--------------------------------------------- bootstrap ---------------------------------------------->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+    <!--------------------------- Font ----------------------------->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito" rel="stylesheet">
+    <!--------------------------------------------- External Sheet ---------------------------------------------->
+    <link rel="stylesheet" href="../style.css">
+    <title> Hospital </title>
+</head>
+
+<body>
+    <section class="container-fluid" id="sign-up-log-in-section">
+        <div class="row">
+            <div class="col-md-6 text-center" id="sign-up-img">
+                <h1>Welcome to Andrei <br> Hospital</h1>
+                <img src="../assets/log-in.svg" alt="" class="mt-5 img-fluid">
+            </div>
+            <div class="col-md-6">
+                <main id="log-in-section">
+                    <div class="wrapper">
+                        <div class="title-text">
+                            <div class="title login">
+                                Login Form</div>
+                            <div class="title signup">
+                                Signup Form</div>
+                        </div>
+                        <div class="form-container">
+                            <div class="slide-controls">
+                                <input type="radio" name="slide" id="login" checked>
+                                <input type="radio" name="slide" id="signup">
+                                <label for="login" class="slide login">Login</label>
+                                <label for="signup" class="slide signup">Signup</label>
+                                <div class="slider-tab">
+                                </div>
+                            </div>
+                            <div class="form-inner">
+                                <form action="../index.html" class="login">
+                                    <div class="field">
+                                        <input type="email" placeholder="Email Address" required>
+                                    </div>
+                                    <div class="field">
+                                        <input type="password" placeholder="Password" required>
+                                    </div>
+                                    <div class="pass-link">
+                                        <a href="#">Forgot password?</a></div>
+                                    <div class="field btn">
+                                        <div class="btn-layer">
+                                        </div>
+                                        <input type="submit" value="Login">
+                                    </div>
+                                    <div class="signup-link">
+                                        Not a member? <a href="">Signup now</a></div>
+                                </form>
+                                <form action="../index.html" class="signup">
+                                    <div class="field">
+                                        <input type="email" placeholder="Email Address" required>
+                                    </div>
+                                    <div class="field">
+                                        <input type="password" placeholder="Password" required>
+                                    </div>
+                                    <div class="field">
+                                        <input type="password" placeholder="Confirm password" required>
+                                    </div>
+                                    <div class="field btn">
+                                        <div class="btn-layer">
+                                        </div>
+                                        <input type="submit" value="Signup">
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </main>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+    <script>
+        const loginText = document.querySelector(".title-text .login");
+        const loginForm = document.querySelector("form.login");
+        const loginBtn = document.querySelector("label.login");
+        const signupBtn = document.querySelector("label.signup");
+        const signupLink = document.querySelector("form .signup-link a");
+        signupBtn.onclick = (() => {
+            loginForm.style.marginLeft = "-50%";
+            loginText.style.marginLeft = "-50%";
+        });
+        loginBtn.onclick = (() => {
+            loginForm.style.marginLeft = "0%";
+            loginText.style.marginLeft = "0%";
+        });
+        signupLink.onclick = (() => {
+            signupBtn.click();
+            return false;
+        });
+    </script>
+
+
+    <script src="./app.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
