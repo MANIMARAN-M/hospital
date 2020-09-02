@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--------------------------------------------- Icon ---------------------------------------------->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!--------------------------------------------- Animations ---------------------------------------------->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <!--------------------------------------------- bootstrap ---------------------------------------------->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+    <!--------------------------- Font ----------------------------->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito" rel="stylesheet">
+    <!--------------------------------------------- External Sheet ---------------------------------------------->
+    <link rel="stylesheet" href="../style.css">
+    <title> Hospital </title>
+</head>
+
+<body>
+    <section class="">
+        <header class="menu">
+            <div id="nav-icon1">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="logo">
+                <h1>Andrei</h1>
+            </div>
+            <nav class="nav_menu">
+                <ul class="nav_ul">
+                    <li><a class="menu_item first" href="../index.html">About</a></li>
+                    <li><a class="menu_item" href="#">Blog</a></li>
+                    <li><a class="menu_item active" href="./appointment.html">Appointment</a></li>
+                    <li><a class="menu_item" href="#">Contact Us</a></li>
+                    <li><a class="menu_item" href="./log-in/log-in.html">Log In / Sign Up</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div id="appointment-extra-attachment">
+
+        </div>
+
+        <section class="container-fluid" id="appointment-section">
+            <div class="container">
+                <div class="row shadow" id="appointment-head">
+                    <div class="col-md-12 mt-5 mb-4" id="appointment-date-time">
+                        <h1><span class=" patient-no-two">1</span> Select Date</h1>
+                    </div>
+                    <div class="col-md-12 text-center">
+                        <div>
+                            <input type="date">
+                        </div>
+                    </div>
+                    <div class="col-md-12 mt-3 text-center">
+                        <div class="mb-2" id="appointment-time-box">
+                            <h1>Set Appointment Time</h1>
+                            <div class="row-one">
+                                <span>08.00 AM</span>
+                                <span>09.00 AM</span>
+                                <span>10.00 AM</span>
+                            </div>
+                            <div class="row-two">
+                                <span>11.00 AM</span>
+                                <span>12.00 PM</span>
+                                <span>01.00 PM</span>
+                            </div>
+                            <div class="row-three">
+                                <span>02.00 PM</span>
+                                <span>03.00 PM</span>
+                                <span>04.00 PM</span>
+                            </div>
+                            <div class="row-four">
+                                <span>05.00 PM</span>
+                                <span>06.00 PM</span>
+                                <span>07.00 PM</span>
+                            </div>
+                            <div class="row-five">
+                                <span>08.00 PM</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-12 mb-3 text-right">
+                        <button class="custom-btn btn-own">Continue <i class="fa fa-arrow-right"
+                                aria-hidden="true"></i></button>
+                    </div>
+                </div>
+            </div>
+            <section class="container shadow" id="appiontment-last-section">
+                <div class="row mt-3">
+                    <div class="col-md-7 mb-4">
+                        <div class="row mt-3 mb-5">
+                            <div class="col-md-6" id="parient-two-section">
+                                <h1><span class="patient-no-two">2</span> Patient Details</h1>
+                            </div>
+                            <div class="col-md-6 text-right" id="patient-someone">
+                                <h1>I book for someone else <i class="fa fa-toggle-on" aria-hidden="true"></i></h1>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-6" id="patient-first-name">
+                                <p>First Name</p>
+                                <input type="text">
+                            </div>
+                            <div class="col-sm-6" id="patient-second-name">
+                                <p>Last Name</p>
+                                <input type="text">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-6" id="patient-mail-id">
+                                <p>Email</p>
+                                <input type="email">
+                            </div>
+                            <div class="col-sm-6" id="patient-dob">
+                                <p>Date of Birth</p>
+                                <input type="date" name="" id="">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-12" id="patient-phone-number">
+                                <p>Phone Number</p>
+                                <input type="text">
+                            </div>
+                        </div>
+                        <div class=" row">
+                            <div class="col-sm-12" id="patient-insurance">
+                                <input type="checkbox">
+                                <span>Have Insurance</span>
+                            </div>
+                        </div>
+                        <div class="row mt-1">
+                            <div class="col-sm-6" id="patient-first-name">
+                                <p>Insurance Name</p>
+                                <input type="text">
+                            </div>
+                            <div class="col-sm-6" id="patient-second-name">
+                                <p>Insurance Plan Name</p>
+                                <input type="text">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-12" id="patient-phone-number">
+                                <p>Insurance ID</p>
+                                <input type="text">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-6 text-left mt-3 mb-1" id="patient-back-btn">
+                                <button type="submit"><i class="fa fa-arrow-left" aria-hidden="true"></i> Go to
+                                    back</button>
+                            </div>
+                            <div class="col-sm-6 text-right mt-3 mb-1" id="patient-btn-section">
+                                <button type="submit" class="custom-btn btn-own">Submit <i class="fa fa-arrow-right"
+                                        aria-hidden="true"></i> </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-5">
+                        <div class="row shadow" id="appointment-doctor-section">
+                            <div class="col-sm-3 text-right mt-4" id="apoointment-doctor-img">
+                                <img src="./Doctor's Image/doctor-one.svg" alt="" class="img-fluid">
+                            </div>
+                            <div class="col-sm-9 mt-4" id="appoinment-doctor-name">
+                                <h1>Dr. Mohamad Eslam</h1>
+                                <p>
+                                    Genral Doctor
+                                </p>
+                                <div class="doctor-star-rating">
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <span>5.0(250+)</span>
+                                </div>
+                            </div>
+                            <div class="col-sm-12 mb-4" id="appointment-doctor-address">
+                                <p><i class="fa fa-medkit" aria-hidden="true"></i> 3701 West Fork Street </p>
+                                <p><i class="fa fa-map-marker" aria-hidden="true"></i> Helena, Montana.</p>
+                                <p><i class="fa fa-bookmark" aria-hidden="true"></i> Next available time
+                                    <span>Tomarrow</span> from <span>09.30AM</span></p>
+                            </div>
+                        </div>
+                    </div>
+            </section>
+        </section>
+
+
+
+
+
+        <section class="container mt-5" id="home-subscribe-section">
+            <div class="row" id="home-subscribe-head">
+                <div class="col-md-6" id="home-subscribe-content">
+                    <h1>
+                        Subscribe for our <br>
+                        <span style="color: #f16534;">Newsletter</span>
+                    </h1>
+                    <p>
+                        It is a long established fact that a reader will be distracted by the
+                        readable content of a page when looking at it's layout.
+                    </p>
+                </div>
+                <div class="col-md-6" id="home-subscribe-btn">
+                    <div class="home-text-area">
+                        <input type="text" placeholder="Enter you mail address">
+                    </div>
+                    <div class="home-submit-btn btn-three">
+                        <button class="custom-btn btn-own">Subscribe</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+        <section class="container-fluid mt-5" id="footer-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6" id="footer-content-section">
+                        <h1>
+                            Andrei
+                        </h1>
+                        <p>
+                            It is a long established fact that a reader will be distracted by the readable content of a
+                            page
+                            when looking at it's layout using Lorem ipsum dolor, sit amet
+                            consectetur
+                            adipisicing elit.
+                        </p>
+                        <div id="social-media-section">
+                            <i class="fa fa-instagram" aria-hidden="true"></i>
+                            <i class="fa fa-facebook" aria-hidden="true"></i>
+                            <i class="fa fa-linkedin" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                    <div class="col-md-6" id="footer-content-two">
+                        <div class="row">
+                            <div class="col-sm-4" id="footer-child-links">
+                                <h1>Site links</h1>
+                                <ul>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">About</a></li>
+                                    <li><a href="#">Blog</a></li>
+                                    <li><a href="#">Appointment</a></li>
+                                    <li><a href="#">Help</a></li>
+                                    <li><a href="#">Contact Us</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-sm-4" id="footer-second-child">
+                                <h1>Search by city</h1>
+                                <ul>
+                                    <li><a href="#">Dubai</a></li>
+                                    <li><a href="#">Singapour</a></li>
+                                    <li><a href="#">Ajman</a></li>
+                                    <li><a href="#">California</a></li>
+                                    <li><a href="#">Umm al-Quwian</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-sm-4" id="footer-third-child">
+                                <h1>
+                                    Are you a Doctor?
+                                </h1>
+                                <p><a style="color: tomato;" href="#">List your practice</a></p>
+                                <br>
+                                <h1>
+                                    Languages
+                                </h1>
+                                <p>
+                                    English
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="row mb-3 mt-3">
+                    <div class="col-md-6" id="footer-end-content">
+                        <p>
+                            Copyright @ 2020 <strong>Andrei Hospital.</strong> All right reserved.
+                        </p>
+                    </div>
+                    <div class="col-md-6 footer-wesite text-right">
+                        <p>Website by <a href="https://www.logritha.com/">Logritha.com</a></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+        <script src="../app.js"></script>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+            crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+            integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+            crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+            integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+            crossorigin="anonymous"></script>
+</body>
+
+</html>
